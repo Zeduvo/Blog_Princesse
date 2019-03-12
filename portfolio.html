@@ -5,21 +5,28 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800|Poppins:200,300,400,500,600,700,800" rel="stylesheet"> 	<title>Princess</title>
+	<script src="script.js"></script>
 </head>
 <body>
 	<!-- Section 1 -->
 	<header>
 		<main class="Princ">
-			<section>
-				<nav class="burgerPlat">
-					<p>Home</p>
-					<p>About</p>
-					<p>Services</p>
-					<p>Works</p>
-					<p>Clients</p>
-					<p>Blog</p>
-					<p>Contact</p>
-				</nav>
+			<section class="Navigation">
+				<div class="mobileMenu">
+					<div class="bar">
+						<p class="titleP">Princess</p>
+						<span onclick="burgerMobile()"><i class="fas fa-bars"></i></span>
+					</div>
+					<nav id="menu" class="burger">
+						<p>Home</p>
+						<p>About</p>
+						<p>Services</p>
+						<p>Works</p>
+						<p>Clients</p>
+						<p>Blog</p>
+						<p>Contact</p>
+					</nav>
+				</div>
 			</section>
 			<section class="sec1">
 				<h1>Hello</h1>
@@ -28,7 +35,7 @@
 		</main>
 	</header>
 	<!-- Section 2 -->
-	<main class="About">
+	<main id="MOVE" class="About">
 		<section class="princess">
 			<img src="img/img/hero.jpg">
 		</section>
